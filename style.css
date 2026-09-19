@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7ff;
+    color: #333;
+}
+
+nav {
+    background-color: #4b4ded;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #e8e9ff;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+button {
+    background-color: #4b4ded;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    color: #4b4ded;
+}
+
+li {
+    margin: 10px 0;
+}
+.project {
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+    color: #4b4ded;
+}
+
+.project p {
+    font-size: 16px;
+}
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skill-card h3 {
+    color: #4b4ded;
+    font-size: 22px;
+}
+
+.skill-card p {
+    color: #555;
+}
+
+
+@media (max-width: 600px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    display: inline-block;
+    background-color: #4b4ded;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+#contact a:hover {
+    opacity: 0.8;
+}
